@@ -1,3 +1,7 @@
+
+<img width="1339" alt="Screenshot 2024-06-28 at 3 29 55 PM" src="https://github.com/datarobinhood/amazon-dlp/assets/165196356/95caa768-a30f-4d03-ae5f-1eca4934bbe0">
+
+
 # Vana DLP UI
 This is a generic UI for uploading data to a Data Liquidity Pool (DLP). This app does the following:
 1. Connect your EVM compatible wallet, which holds some $DAT
