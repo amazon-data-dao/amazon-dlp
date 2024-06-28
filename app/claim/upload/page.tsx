@@ -198,19 +198,18 @@ export default function Page() {
                 Instructions
               </Title>
               <Disclaimer />
-              <InstructionsGallery />
               <Stack gap="sm">
-                <Text fw="500" size="md">
-                  1. Navigate to your account and open settings.
+                <Text fw="400" size="md">
+                  1. Navigate to the <a href="https://www.amazon.com/gp/privacycentral/dsar/preview.html">Amazon data export page</a>
                 </Text>
-                <Text fw="500" size="md">
-                  2. Open the Data Controls tab and click on "Export".
+                <Text fw="400" size="md">
+                  2. Select "Your Orders" and submit request.
                 </Text>
-                <Text fw="500" size="md">
+                <Text fw="400" size="md">
                   3. You will receive an email to download your data.
                 </Text>
-                <Text fw="500" size="md">
-                  4. Please upload this data file on the right.
+                <Text fw="400" size="md">
+                  4. Upload this data file and earn $AMZDAT
                 </Text>
               </Stack>
             </Stack>

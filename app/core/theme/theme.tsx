@@ -1,9 +1,14 @@
 import { Container, Text, colorsTuple, createTheme, rem } from "@mantine/core";
-import { Khand } from "next/font/google";
+import { Rubik, Chakra_Petch } from "next/font/google";
 import localFont from "next/font/local";
 
-const khand = Khand({
+const rubik = Rubik({
   weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const archivoBlack = Chakra_Petch({
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -40,10 +45,10 @@ export const theme = createTheme({
       },
     }),
   },
-  fontFamily: khand.style.fontFamily,
-  fontFamilyMonospace: arrayFont.style.fontFamily,
+  fontFamily: rubik.style.fontFamily,
+  fontFamilyMonospace: archivoBlack.style.fontFamily,
   headings: {
-    fontFamily: khand.style.fontFamily,
+    fontFamily: rubik.style.fontFamily,
     sizes: {
       h1: {
         fontSize: rem(60),
@@ -89,13 +94,13 @@ export const theme = createTheme({
     xxl: rem(40),
   },
   colors: {
-    ["brand-1"]: colorsTuple("#90D26D"),
-    ["brand-2"]: colorsTuple("#A0AA96"),
-    ["brand-3"]: colorsTuple("#2D7865"),
-    ["brand-4"]: colorsTuple("#D9EDBF"),
-    ["brand-5"]: colorsTuple("#F7FFF4"),
-    ["brand-6"]: colorsTuple("#F3F8EE"),
-    ["brand-7"]: colorsTuple("#E0EAE3"),
-    ["brand-8"]: colorsTuple("#A5B3A5"),
-  },
+    ["brand-1"]: colorsTuple("#00A8E1"), // Amazon Prime Blue
+    ["brand-2"]: colorsTuple("#FF9900"), // Amazon Orange
+    ["brand-3"]: colorsTuple("#232F3E"), // Amazon Dark Blue
+    ["brand-4"]: colorsTuple("#F3D6A8"), // Light Amazon Orange
+    ["brand-5"]: colorsTuple("#E3F2FD"), // Light Amazon Prime Blue
+    ["brand-6"]: colorsTuple("#FDE7D7"), // Very Light Amazon Orange
+    ["brand-7"]: colorsTuple("#E1ECF4"), // Light Blue-Grey
+    ["brand-8"]: colorsTuple("#C9DAE8")  // Lighter Amazon Blue
+},
 });

@@ -91,7 +91,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
                 <Flex pos="relative" dir="row" align="center" gap="sm">
                   <Link href="/">
                     <Title order={5} ff="monospace">
-                      DataDAO
+                      amazn data dao
                     </Title>
                   </Link>
                   <Menu shadow="md" width={250}>

@@ -19,22 +19,19 @@ import { Disclaimer } from "./components/disclaimer";
 
 const instructions = [
   {
-    number: 1,
-    title: "Connect wallet to create account",
+    title: "We all buy a lot on Amazon",
     description:
-      "To create your account, click 'Connect' located at the top right corner of the screen and follow the instructions to connect your wallet.",
+      "From your monthly subscriptions to your one off electronics orders, your amazon data is valuable.",
   },
   {
-    number: 2,
-    title: "Chat GPT prompts",
+    title: "Take action",
     description:
-      "Open a new chat in ChatGPT, paste your wallet address into the message box, and send it.",
+      "But should they really be the only ones who reap the benefits of our purchase data?",
   },
   {
-    number: 3,
-    title: "Download data and claim points",
+    title: "Minimum requirements",
     description:
-      "Request a download of your ChatGPT data by following the provided instructions, then upload it here to claim your points",
+      "In order to ensure the value of our collective dataset, we require: US-based accounts at least 1 year old with 5 or more orders.",
   },
 ];
 
@@ -44,15 +41,11 @@ export default function Page() {
       <Grid>
         <Grid.Col span={{ sm: 12, md: 6 }}>
           <Stack align="stretch" justify="center" gap="lg">
-            <Title order={3} ff="monospace">
-              Claim instructions
+            <Title order={4}>
+              Convert your Amazon purchases into $AMZDAT
             </Title>
-            <Disclaimer />
             {instructions.map((instruction, i) => (
               <Stack gap="sm" key={i}>
-                <Text c="brand-2" fw="bold">
-                  0{instruction.number}
-                </Text>
                 <Title order={6} c="brand-2">
                   {instruction.title}
                 </Title>
@@ -67,7 +60,8 @@ export default function Page() {
           </Stack>
         </Grid.Col>
         <Grid.Col span={5} offset={1} visibleFrom="md">
-          <Image radius="md" src="/images/claim/instructions.png" />
+          <Image radius="md" src="/images/amazon_box.jpeg" />
+          <Disclaimer />
         </Grid.Col>
       </Grid>
     </Container>

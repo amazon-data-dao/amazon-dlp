@@ -19,8 +19,7 @@ export const Disclaimer = () => {
       bg="gray.0"
     >
       <Text c="black">
-        Please do <b>NOT</b> upload any real information. To participate, please
-        create a new account for testing purposes only.
+        You will rewarded with <b>TESTNET $AZDAT</b> tokens.
       </Text>
     </Notification>
   );
